@@ -11,13 +11,16 @@
     <article class="login">
         <h1>
             로그인 또는 회원가입
-            <img src="images/close.png" alt="닫기버튼">
+            <a href=""><img src="images/close.png" alt="닫기버튼"></a>
         </h1>
         <section class="main">
             <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
-            <input type="text" class="id" placeholder="아이디">
-            <input type="password" class="pw" placeholder="비밀번호">
-            <p class="maintain">로그인 상태 유지</p>
+            <input type="text" class="id" placeholder="아이디" required="required">
+            <input type="password" class="pw" placeholder="비밀번호" required="required">
+            <p class="stay-login">
+                <input type="checkbox" id="chkbox">
+                <label for="chkbox">로그인 상태 유지</label>
+            </p>
             <a class="btn-login" href="#none">로그인</a>
             <div class="find">
                 <a class="btn-join" href="#none">회원가입</a>

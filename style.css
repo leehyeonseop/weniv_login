@@ -53,7 +53,7 @@ article.login {
     border-bottom: 1px solid #C4C4C4;
 }
 
-.login h1 img {
+.login h1 a {
     float: right;
 }
 
@@ -68,7 +68,7 @@ article.login {
     line-height: 24px;
 }
 
-.main input {
+.main input.id, .main input.pw {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -83,23 +83,33 @@ article.login {
     margin-bottom: 10px;
 }
 
-.main p.maintain {
+
+.main p.stay-login {
     margin-top: 17px;
     margin-bottom: 21px;
     line-height: 20px;
     color: #767676;
 }
 
-.main p.maintain::before {
+.main p.stay-login input[id="chkbox"] {
+    display: none;
+}
+
+.main p.stay-login input[id="chkbox"] + label::before {
     content: '';
     display: block;
     width: 22px;
     height: 22px;
-    background-image: url('images/check-box.png');
     float: left;
     margin-top: -1px;
     margin-right: 8px;
+    background-image: url('images/check-box.png');
 }
+
+.main p.stay-login input[id="chkbox"]:checked + label::before {
+    background-image: url('images/checked-box.png');
+}
+
 
 .main a.btn-login {
     display: block;
